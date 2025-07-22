@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratagema | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-gray-900">
+                    <a href="index.html">Your Name</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="stratagema.html" class="nav-link-external font-semibold text-blue-800 border-b-2 border-blue-800">Stratagema</a>
+                    <a href="index.html#about" class="nav-link-external font-semibold text-gray-600">About Me</a>
+                    <a href="index.html#cs-strategy" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
+                    <a href="index.html#contact" class="nav-link-external font-semibold text-gray-600">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="stratagema.html" class="block py-2 px-6 text-sm text-blue-700 bg-gray-100">Stratagema</a>
+            <a href="index.html#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="index.html#cs-strategy" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="index.html#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Stratagema Intro Section -->
+        <section id="stratagema-intro" class="mb-24 md:mb-32">
+            <div class="section-card p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 punchy-text">Stratagema: The Art of Strategic Thinking</h2>
+                <article class="prose prose-lg max-w-none text-gray-700">
+                    <p class="lead">In the complex theaters of modern business and historic battlefields, the principles of strategy remain timeless. A 'stratagema' is not merely a plan, but a clever, often unconventional, maneuver designed to outwit an opponent or solve a complex problem. This philosophy, honed in the elite echelons of the military and the demanding boardrooms of global consulting, is my guide.</p>
+                    <p>This ancient wisdom is more relevant today than ever. In customer success, the 'enemy' is churn, dissatisfaction, and unrealized value. We win not through confrontation, but by preemptively building partnerships, demonstrating value, and leading with an empathetic understanding of our clients' goals. This is the modern stratagema: a blend of analytical rigor, human-centric leadership, and a relentless drive for sustainable growth.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center punchy-text">The Four Pillars</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Article 1 Card -->
+                <a href="articles/article1.html" class="block section-card p-6 md:p-8 text-center">
+                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 1: Orientation</h3>
+                    <p class="text-gray-600">Understanding the world and discerning the steps needed to reach your goals.</p>
+                </a>
+                <!-- Article 2 Card -->
+                <a href="articles/article2.html" class="block section-card p-6 md:p-8 text-center">
+                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 2: Embarrassment</h3>
+                    <p class="text-gray-600">Recognizing when your worldview is inaccurate and dismantling the old to gain a new perspective.</p>
+                </a>
+                <!-- Article 3 Card -->
+                <a href="articles/article3.html" class="block section-card p-6 md:p-8 text-center">
+                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 3: Systemic Inquiry</h3>
+                    <p class="text-gray-600">Analyzing the entire ecosystem surrounding your goal to gain a comprehensive view of reality.</p>
+                </a>
+                <!-- Article 4 Card -->
+                <a href="articles/article4.html" class="block section-card p-6 md:p-8 text-center">
+                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 4: Design & Implement</h3>
+                    <p class="text-gray-600">Transitioning from planning to action with commitment and suspicion.</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Designed to be bold, clear, and punchy.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
