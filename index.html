@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Leader | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link.active, .nav-link:hover {
+            color: #1e40af; /* A strong blue for active/hover state */
+            border-bottom-color: #1e40af;
+        }
+        .punchy-text {
+            color: #1e3a8a; /* A slightly darker, bolder blue */
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-gray-900">
+                    <a href="#home">Your Name</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#stratagema" class="nav-link font-semibold text-gray-600">Stratagema</a>
+                    <a href="#about" class="nav-link font-semibold text-gray-600">About Me</a>
+                    <a href="#cs-strategy" class="nav-link font-semibold text-gray-600">CS Strategy</a>
+                    <a href="#contact" class="nav-link font-semibold text-gray-600">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#stratagema" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Stratagema</a>
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="#cs-strategy" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section id="home" class="text-center mb-24 md:mb-32">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                Driving <span class="punchy-text">Impactful Solutions</span> Through Data and Collaboration.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                A strategic leader with a diverse background as a McKinsey consultant, Special Forces officer, and growth-focused executive.
+            </p>
+        </section>
+
+        <!-- Stratagema Section -->
+        <section id="stratagema" class="mb-24 md:mb-32 scroll-mt-20">
+            <div class="section-card p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 punchy-text">Stratagema: The Art of Strategic Thinking</h2>
+                <article class="prose prose-lg max-w-none text-gray-700">
+                    <p class="lead">In the complex theaters of modern business and historic battlefields, the principles of strategy remain timeless. A 'stratagema' is not merely a plan, but a clever, often unconventional, maneuver designed to outwit an opponent or solve a complex problem. This philosophy, honed in the elite echelons of the military and the demanding boardrooms of global consulting, is my guide.</p>
+                    <p>My journey has taught me that the most resilient strategies are born from a synthesis of rigorous, data-driven analysis and the creative, adaptable mindset of a warrior. It's about seeing the entire landscape—the known variables and the hidden ambiguities—and charting a course with conviction. It's about understanding that true strength lies not in rigidity, but in the ability to pivot with intelligence and purpose.</p>
+                    <blockquote>
+                        <p>"The supreme art of war is to subdue the enemy without fighting." - Sun Tzu</p>
+                    </blockquote>
+                    <p>This ancient wisdom is more relevant today than ever. In customer success, the 'enemy' is churn, dissatisfaction, and unrealized value. We win not through confrontation, but by preemptively building partnerships, demonstrating value, and leading with an empathetic understanding of our clients' goals. This is the modern stratagema: a blend of analytical rigor, human-centric leadership, and a relentless drive for sustainable growth.</p>
+                    <p>Whether navigating the uncertainties of a new market or fostering a culture of excellence within a team, the core challenge is the same: to learn quickly, act decisively, and inspire others toward a common purpose. This article is an exploration of that ethos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="mb-24 md:mb-32 scroll-mt-20">
+             <div class="section-card overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-blue-900 p-8 md:p-12 text-white flex flex-col justify-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">My Journey</h2>
+                        <p class="opacity-90">From Special Forces to corporate strategy, my path has been defined by a commitment to leadership, resilience, and data-driven problem-solving.</p>
+                    </div>
+                    <div class="md:w-2/3 p-8 md:p-12">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-bold punchy-text mb-2">Associate Director, CS Strategy @ Deel</h3>
+                                <p class="text-gray-600">Currently, I drive impactful solutions through data and collaboration, shaping the future of customer success in a dynamic, high-growth environment.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold punchy-text mb-2">McKinsey & Company | Consultant</h3>
+                                <p class="text-gray-600">Honed a data-driven, problem-solving mindset, tackling complex challenges for global clients across unfamiliar industries and landscapes.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold punchy-text mb-2">Awacs | General Manager</h3>
+                                <p class="text-gray-600">Reinforced the importance of leading with empathy, building long-term partnerships, and creating sustainable, value-driven growth.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold punchy-text mb-2">IDF | Captain, Sayeret Maglan Special Forces</h3>
+                                <p class="text-gray-600">My military service instilled resilience, leadership in uncertainty, and adaptability—foundational skills for navigating any ambiguous environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CS Strategy Section -->
+        <section id="cs-strategy" class="mb-24 md:mb-32 scroll-mt-20">
+            <div class="section-card p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 punchy-text">My CS Strategy Philosophy</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3">Data-Driven Empathy</h3>
+                        <p class="text-gray-600">I believe the most powerful CS strategies merge quantitative insights with a deep, qualitative understanding of the customer's world. Data tells us 'what,' but empathy tells us 'why.'</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3">Proactive Partnership</h3>
+                        <p class="text-gray-600">Customer Success should be an offensive, not a defensive, discipline. We must move from reactive problem-solving to proactively guiding clients toward their long-term goals.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3">Sustainable Growth</h3>
+                        <p class="text-gray-600">The ultimate goal is to create systems and processes that foster sustainable, scalable growth for both the client and the company, building value that endures.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3">Leadership Through Purpose</h3>
+                        <p class="text-gray-600">A high-performing CS team is united by a clear sense of purpose. I focus on fostering a culture of values, continuous learning, and shared ownership of the customer's success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-20">
+            <div class="section-card p-8 md:p-12">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 punchy-text">Let's Connect</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                        I am always open to connecting with like-minded professionals, lifelong learners, and those passionate about strategy and history.
+                    </p>
+                    <a href="https://www.linkedin.com/in/your-profile-url" target="_blank" class="inline-block bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition-colors text-lg">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Designed to be bold, clear, and punchy.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling and active link highlighting
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Active link highlighting on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
