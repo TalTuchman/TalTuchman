@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-gray-900">
+                    <a href="index.html">Tal Tuchman</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="stratagema.html" class="nav-link-external font-semibold text-gray-600">Stratagema</a>
+    
+                    <a href="about.html" class="nav-link-external font-semibold text-blue-800 border-b-2 border-blue-800">About Me</a>
+                    <a href="cs_strategy.html" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
+                    <a href="index.html#contact" class="nav-link-external font-semibold text-gray-600">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="stratagema.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Stratagema</a>
+            <a href="about.html" class="block py-2 px-6 text-sm text-blue-700 bg-gray-100">About Me</a>
+            <a href="cs_strategy.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="index.html#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto">
+             <div class="section-card p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 punchy-text">My Journey</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold punchy-text mb-2">Associate Director, CS Strategy @ Deel</h3>
+                        <p class="text-gray-600">Currently, I drive impactful solutions through data and collaboration, shaping the future of customer success in a dynamic, high-growth environment.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold punchy-text mb-2">McKinsey & Company | Consultant</h3>
+                        <p class="text-gray-600">Honed a data-driven, problem-solving mindset, tackling complex challenges for global clients across unfamiliar industries and landscapes.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold punchy-text mb-2">IDF | Captain, Sayeret Maglan Special Forces</h3>
+                        <p class="text-gray-600">My military service instilled resilience, leadership in uncertainty, and adaptability—foundational skills for navigating any ambiguous environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Tal Tuchman. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
