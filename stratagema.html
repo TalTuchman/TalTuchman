@@ -21,8 +21,8 @@
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="stratagema.html" class="nav-link-external font-semibold text-blue-800 border-b-2 border-blue-800">Stratagema</a>
-                    <a href="index.html#about" class="nav-link-external font-semibold text-gray-600">About Me</a>
-                    <a href="index.html#cs-strategy" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
+                    <a href="about.html" class="nav-link-external font-semibold text-gray-600">About Me</a>
+                    <a href="cs_strategy.html" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
                     <a href="index.html#contact" class="nav-link-external font-semibold text-gray-600">Contact</a>
                 </nav>
                 <div class="md:hidden">
@@ -35,8 +35,8 @@
          <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="stratagema.html" class="block py-2 px-6 text-sm text-blue-700 bg-gray-100">Stratagema</a>
-            <a href="index.html#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
-            <a href="index.html#cs-strategy" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="about.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="cs_strategy.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
             <a href="index.html#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
         </div>
     </header>
@@ -58,27 +58,61 @@
         <!-- Articles Section -->
         <section id="articles">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center punchy-text">The Four Pillars</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Article 1 Card -->
-                <a href="articles/article1.html" class="block section-card p-6 md:p-8 text-center">
-                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 1: Orientation</h3>
-                    <p class="text-gray-600">Understanding the world and discerning the steps needed to reach your goals.</p>
-                </a>
-                <!-- Article 2 Card -->
-                <a href="articles/article2.html" class="block section-card p-6 md:p-8 text-center">
-                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 2: Embarrassment</h3>
-                    <p class="text-gray-600">Recognizing when your worldview is inaccurate and dismantling the old to gain a new perspective.</p>
-                </a>
-                <!-- Article 3 Card -->
-                <a href="articles/article3.html" class="block section-card p-6 md:p-8 text-center">
-                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 3: Systemic Inquiry</h3>
-                    <p class="text-gray-600">Analyzing the entire ecosystem surrounding your goal to gain a comprehensive view of reality.</p>
-                </a>
-                <!-- Article 4 Card -->
-                <a href="articles/article4.html" class="block section-card p-6 md:p-8 text-center">
-                    <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 4: Design & Implement</h3>
-                    <p class="text-gray-600">Transitioning from planning to action with commitment and suspicion.</p>
-                </a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                
+                <!-- Pillar 1 Group -->
+                <!-- **** CHANGE HERE: Added flexbox classes to ensure equal height **** -->
+                <div class="flex flex-col">
+                    <a href="articles/article1.html" class="block section-card p-6 md:p-8 text-center mb-3 flex-grow">
+                        <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 1: Orientation</h3>
+                        <p class="text-gray-600">Understanding the world and discerning the steps needed to reach your goals.</p>
+                    </a>
+                    <!-- Sub-article links -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <a href="articles/article1_1.html" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">The Strategus</a>
+                        <a href="articles/article1_2.html" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Stratagema</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 Group -->
+                <div class="flex flex-col">
+                    <a href="articles/article2.html" class="block section-card p-6 md:p-8 text-center mb-3 flex-grow">
+                        <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 2: Embarrassment</h3>
+                        <p class="text-gray-600">Recognizing when your worldview is inaccurate and dismantling the old to gain a new perspective.</p>
+                    </a>
+                    <!-- Sub-article links -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <a href="#" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Placeholder Article 2.1</a>
+                        <a href="#" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Placeholder Article 2.2</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 Group -->
+                <div class="flex flex-col">
+                    <a href="articles/article3.html" class="block section-card p-6 md:p-8 text-center mb-3 flex-grow">
+                        <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 3: Systemic Inquiry</h3>
+                        <p class="text-gray-600">Analyzing the entire ecosystem surrounding your goal to gain a comprehensive view of reality.</p>
+                    </a>
+                    <!-- Sub-article links -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <a href="#" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Placeholder Article 3.1</a>
+                        <a href="#" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Placeholder Article 3.2</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 Group -->
+                <div class="flex flex-col">
+                    <a href="articles/article4.html" class="block section-card p-6 md:p-8 text-center mb-3 flex-grow">
+                        <h3 class="text-xl font-bold mb-3 punchy-text">Pillar 4: Design & Implement</h3>
+                        <p class="text-gray-600">Transitioning from planning to action with commitment and suspicion.</p>
+                    </a>
+                    <!-- Sub-article links -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <a href="#" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Placeholder Article 4.1</a>
+                        <a href="#" class="block bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold p-3 rounded-lg text-center transition-colors">Placeholder Article 4.2</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -87,7 +121,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-24 md:mt-32">
         <div class="container mx-auto px-6 py-8 text-center">
-            <p>&copy; 2025 Tal Tuchman. All Rights Reserved.</p>
+            <p>&copy; 2024 Tal Tuchman. All Rights Reserved.</p>
         </div>
     </footer>
     

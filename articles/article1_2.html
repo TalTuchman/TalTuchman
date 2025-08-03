@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Stratagema? | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-gray-900">
+                    <a href="../index.html">Tal Tuchman</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="../stratagema.html" class="nav-link-external font-semibold text-blue-800 border-b-2 border-blue-800">Stratagema</a>
+                    <a href="../about.html" class="nav-link-external font-semibold text-gray-600">About Me</a>
+                    <a href="../cs_strategy.html" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
+                    <a href="../index.html#contact" class="nav-link-external font-semibold text-gray-600">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="../stratagema.html" class="block py-2 px-6 text-sm text-blue-700 bg-gray-100">Stratagema</a>
+            <a href="../about.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="../cs_strategy.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="../index.html#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Article Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto">
+            <a href="../stratagema.html" class="inline-block mb-8 text-blue-700 hover:text-blue-900 font-semibold">← Back to Stratagema</a>
+            <div class="section-card p-8 md:p-12">
+                <article class="prose prose-lg max-w-none">
+                    <h1>Stratagema</h1>
+                    <p>Stratagema is different from corporate strategy by aiming to look at the world as a multi dimensional arena in which different stakeholders operate simultaneously. Stratagema is the process of researching the different elements and constraints the strategus faces when asking to accomplish a goal.</p>
+                    
+                    <blockquote>
+                        <p>“In its core strategy is really being honest and clear about reality. About your possibilities and constraints. If you understand that and are honest about that you’ll be able to analyze what’s going on and therefor build an effective strategy”</p>
+                    </blockquote>
+
+                    <p>Strategy stops people getting excited and wanting to do without fully thinking about what’s the most effective and why.</p>
+                    <p>Strategy serves as the path leading from the current state to defined goals. Consider it akin to a map: mark your current location, the destination, and meticulously chart your course. The route may present cliffs, rivers, or obstacles necessitating circumvention. Walking a direct route without consulting the map might lead to falls or wasteful efforts overcoming avoidable obstacles.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Tal Tuchman. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
