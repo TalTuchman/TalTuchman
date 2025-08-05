@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Inquiry | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-gray-900">
+                    <a href="index.html">Tal Tuchman</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="stratagema.html" class="nav-link-external font-semibold text-blue-800 border-b-2 border-blue-800">Stratagema</a>
+                    <a href="about.html" class="nav-link-external font-semibold text-gray-600">About Me</a>
+                    <a href="cs_strategy.html" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
+                    <a href="index.html#contact" class="nav-link-external font-semibold text-gray-600">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden md:hidden">
+            <a href="stratagema.html" class="block py-2 px-6 text-sm text-blue-700 bg-gray-100">Stratagema</a>
+            <a href="about.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="cs_strategy.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="index.html#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <section id="inquiry-form">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 punchy-text">Course Inquiry</h1>
+                    <p class="text-lg md:text-xl text-gray-600">Please provide your details below to begin the enrollment process.</p>
+                </div>
+
+                <div class="section-card p-8 md:p-12">
+                    <form id="contact-form">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="course-type" class="block text-sm font-bold text-gray-700 mb-2">Course Type</label>
+                                <input type="text" id="course-type" name="course-type" class="block w-full px-4 py-3 rounded-md bg-gray-200 border-transparent focus:border-blue-500 focus:bg-white focus:ring-0" readonly>
+                            </div>
+
+                            <div>
+                                <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" required class="block w-full px-4 py-3 rounded-md bg-gray-100 border-transparent focus:border-blue-500 focus:bg-white focus:ring-0" placeholder="Jane Doe">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required class="block w-full px-4 py-3 rounded-md bg-gray-100 border-transparent focus:border-blue-500 focus:bg-white focus:ring-0" placeholder="jane.doe@example.com">
+                            </div>
+
+                             <div>
+                                <label for="company" class="block text-sm font-bold text-gray-700 mb-2">Company</label>
+                                <input type="text" id="company" name="company" class="block w-full px-4 py-3 rounded-md bg-gray-100 border-transparent focus:border-blue-500 focus:bg-white focus:ring-0" placeholder="Acme Corporation">
+                            </div>
+
+                             <div>
+                                <label for="title" class="block text-sm font-bold text-gray-700 mb-2">Title</label>
+                                <input type="text" id="title" name="title" class="block w-full px-4 py-3 rounded-md bg-gray-100 border-transparent focus:border-blue-500 focus:bg-white focus:ring-0" placeholder="Strategist">
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <button type="submit" class="w-full bg-blue-700 text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-800 transition-colors text-lg">Submit Inquiry</button>
+                        </div>
+                    </form>
+                    <p id="form-message" class="text-center mt-4 text-green-600 font-semibold"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Tal Tuchman. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // --- SCRIPT TO HANDLE FORM DATA ---
+
+        // 1. Populate the course type from URL parameter
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const courseType = params.get('course');
+            const courseInput = document.getElementById('course-type');
+            
+            if (courseType) {
+                // Capitalize the first letter of each word for better display
+                const formattedCourseType = courseType.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                courseInput.value = formattedCourseType;
+            } else {
+                courseInput.value = 'General Inquiry';
+            }
+        });
+
+        // 2. Handle form submission
+        const form = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            const courseType = document.getElementById('course-type').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const title = document.getElementById('title').value;
+
+            // Construct the mailto link
+            const recipientEmail = 'taltuchman1@gmail.com';
+            const subject = `Course Inquiry: ${courseType} - ${name}`;
+            const body = `
+A new inquiry has been submitted for the Stratagema course.
+
+Course Type: ${courseType}
+Name: ${name}
+Email: ${email}
+Company: ${company}
+Title: ${title}
+            `;
+
+            // Create the mailto URL
+            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Show a success message to the user
+            formMessage.textContent = 'Thank you! Your email client will now open to send the inquiry.';
+            
+            // Redirect to the mailto link to open the user's email client
+            window.location.href = mailtoUrl;
+
+            // Optionally, you can clear the form after a delay
+            setTimeout(() => {
+                form.reset();
+                // Repopulate the course type field since reset() clears it
+                const params = new URLSearchParams(window.location.search);
+                const courseTypeParam = params.get('course');
+                 if (courseTypeParam) {
+                    const formatted = courseTypeParam.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                    document.getElementById('course-type').value = formatted;
+                }
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>
