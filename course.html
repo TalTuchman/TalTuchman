@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratagema Course | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-gray-900">
+                    <a href="index.html">Tal Tuchman</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="stratagema.html" class="nav-link-external font-semibold text-blue-800 border-b-2 border-blue-800">Stratagema</a>
+                    <a href="about.html" class="nav-link-external font-semibold text-gray-600">About Me</a>
+                    <a href="cs_strategy.html" class="nav-link-external font-semibold text-gray-600">CS Strategy</a>
+                    <a href="index.html#contact" class="nav-link-external font-semibold text-gray-600">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="stratagema.html" class="block py-2 px-6 text-sm text-blue-700 bg-gray-100">Stratagema</a>
+            <a href="about.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="cs_strategy.html" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CS Strategy</a>
+            <a href="index.html#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <section id="course-offerings">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 punchy-text">Stratagema Courses & Lectures</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Choose the format that best suits your strategic development needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Option 1: Team Course -->
+                <div class="section-card flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h2 class="text-2xl font-bold mb-4 punchy-text">Team Course</h2>
+                        <p class="text-gray-600 mb-4">In this highly focused 4-session workshop, we will discuss the core values of Stratagema and the 4 steps of the strategic cycle. We will actively develop a comprehensive strategy to effectively guide you toward achieving a specific goal that we will choose as a case study.</p>
+                        <p class="text-gray-600">We will apply each of the steps of the strategic cycle to your current strategic problem and together create an optimal strategy to lead you to success.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-b-lg">
+                        <a href="index.html#contact" class="block w-full bg-blue-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-800 transition-colors text-center text-lg">Inquire for Your Team</a>
+                    </div>
+                </div>
+
+                <!-- Option 2: Individual Course -->
+                <div class="section-card flex flex-col border-4 border-blue-700 shadow-2xl">
+                     <div class="p-8 flex-grow">
+                        <h2 class="text-2xl font-bold mb-4 punchy-text">Individual Course</h2>
+                        <p class="text-gray-600 mb-4">In a 1:1 setting, this highly focused 4-session workshop covers the core values of Stratagema and the 4 steps of the strategic cycle. We will actively develop a comprehensive strategy to guide you toward achieving a specific goal we choose as a case study.</p>
+                        <p class="text-gray-600">We will apply each step of the strategic cycle to your current strategic problem and together create an optimal strategy to lead you to success.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-b-lg">
+                        <a href="index.html#contact" class="block w-full bg-blue-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-800 transition-colors text-center text-lg">Book a 1:1 Course</a>
+                    </div>
+                </div>
+
+                <!-- Option 3: Corporate Lecture -->
+                <div class="section-card flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h2 class="text-2xl font-bold mb-4 punchy-text">Corporate Lecture</h2>
+                        <p class="text-gray-600">A dynamic 1-hour lecture where we will discuss the core values of Stratagema and the 4 steps of the strategic cycle. Your team will master the ability to apply these principles to a current strategic problem in order to create an optimal strategy to lead you to success.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-b-lg">
+                         <a href="index.html#contact" class="block w-full bg-blue-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-800 transition-colors text-center text-lg">Book a Lecture</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Tal Tuchman. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
